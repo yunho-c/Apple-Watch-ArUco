@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		789C3B592D84AF1D00381706 /* Apple Watch ArUco Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 789C3B582D84AF1D00381706 /* Apple Watch ArUco Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7818B9EE2D86209E009C7A9A /* Apple Watch ArUco Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7818B9ED2D86209E009C7A9A /* Apple Watch ArUco Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		789C3B5A2D84AF1D00381706 /* PBXContainerItemProxy */ = {
+		7818B9EF2D86209E009C7A9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 789C3B4C2D84AF1D00381706 /* Project object */;
+			containerPortal = 7818B9E12D86209E009C7A9A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 789C3B572D84AF1D00381706;
+			remoteGlobalIDString = 7818B9EC2D86209E009C7A9A;
 			remoteInfo = "Apple Watch ArUco Watch App";
 		};
-		789C3B6B2D84AF2100381706 /* PBXContainerItemProxy */ = {
+		7818BA002D8620A1009C7A9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 789C3B4C2D84AF1D00381706 /* Project object */;
+			containerPortal = 7818B9E12D86209E009C7A9A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 789C3B572D84AF1D00381706;
+			remoteGlobalIDString = 7818B9EC2D86209E009C7A9A;
 			remoteInfo = "Apple Watch ArUco Watch App";
 		};
-		789C3B752D84AF2100381706 /* PBXContainerItemProxy */ = {
+		7818BA0A2D8620A1009C7A9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 789C3B4C2D84AF1D00381706 /* Project object */;
+			containerPortal = 7818B9E12D86209E009C7A9A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 789C3B572D84AF1D00381706;
+			remoteGlobalIDString = 7818B9EC2D86209E009C7A9A;
 			remoteInfo = "Apple Watch ArUco Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		789C3B812D84AF2100381706 /* Embed Watch Content */ = {
+		7818BA162D8620A1009C7A9A /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				789C3B592D84AF1D00381706 /* Apple Watch ArUco Watch App.app in Embed Watch Content */,
+				7818B9EE2D86209E009C7A9A /* Apple Watch ArUco Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,24 +49,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		789C3B522D84AF1D00381706 /* Apple Watch ArUco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Watch ArUco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		789C3B582D84AF1D00381706 /* Apple Watch ArUco Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Watch ArUco Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		789C3B6A2D84AF2100381706 /* Apple Watch ArUco Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Watch ArUco Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		789C3B742D84AF2100381706 /* Apple Watch ArUco Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Watch ArUco Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7818B9E72D86209E009C7A9A /* Apple Watch ArUco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Watch ArUco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7818B9ED2D86209E009C7A9A /* Apple Watch ArUco Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Watch ArUco Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7818B9FF2D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Watch ArUco Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7818BA092D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Watch ArUco Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		789C3B5C2D84AF1D00381706 /* Apple Watch ArUco Watch App */ = {
+		7818B9F12D86209E009C7A9A /* Apple Watch ArUco Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Apple Watch ArUco Watch App";
 			sourceTree = "<group>";
 		};
-		789C3B6D2D84AF2100381706 /* Apple Watch ArUco Watch AppTests */ = {
+		7818BA022D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Apple Watch ArUco Watch AppTests";
 			sourceTree = "<group>";
 		};
-		789C3B772D84AF2100381706 /* Apple Watch ArUco Watch AppUITests */ = {
+		7818BA0C2D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Apple Watch ArUco Watch AppUITests";
 			sourceTree = "<group>";
@@ -74,21 +74,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		789C3B552D84AF1D00381706 /* Frameworks */ = {
+		7818B9EA2D86209E009C7A9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789C3B672D84AF2100381706 /* Frameworks */ = {
+		7818B9FC2D8620A1009C7A9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789C3B712D84AF2100381706 /* Frameworks */ = {
+		7818BA062D8620A1009C7A9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,23 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		789C3B4B2D84AF1D00381706 = {
+		7818B9E02D86209E009C7A9A = {
 			isa = PBXGroup;
 			children = (
-				789C3B5C2D84AF1D00381706 /* Apple Watch ArUco Watch App */,
-				789C3B6D2D84AF2100381706 /* Apple Watch ArUco Watch AppTests */,
-				789C3B772D84AF2100381706 /* Apple Watch ArUco Watch AppUITests */,
-				789C3B532D84AF1D00381706 /* Products */,
+				7818B9F12D86209E009C7A9A /* Apple Watch ArUco Watch App */,
+				7818BA022D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests */,
+				7818BA0C2D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests */,
+				7818B9E82D86209E009C7A9A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		789C3B532D84AF1D00381706 /* Products */ = {
+		7818B9E82D86209E009C7A9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				789C3B522D84AF1D00381706 /* Apple Watch ArUco.app */,
-				789C3B582D84AF1D00381706 /* Apple Watch ArUco Watch App.app */,
-				789C3B6A2D84AF2100381706 /* Apple Watch ArUco Watch AppTests.xctest */,
-				789C3B742D84AF2100381706 /* Apple Watch ArUco Watch AppUITests.xctest */,
+				7818B9E72D86209E009C7A9A /* Apple Watch ArUco.app */,
+				7818B9ED2D86209E009C7A9A /* Apple Watch ArUco Watch App.app */,
+				7818B9FF2D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests.xctest */,
+				7818BA092D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,164 +122,164 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		789C3B512D84AF1D00381706 /* Apple Watch ArUco */ = {
+		7818B9E62D86209E009C7A9A /* Apple Watch ArUco */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 789C3B822D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco" */;
+			buildConfigurationList = 7818BA172D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco" */;
 			buildPhases = (
-				789C3B502D84AF1D00381706 /* Resources */,
-				789C3B812D84AF2100381706 /* Embed Watch Content */,
+				7818B9E52D86209E009C7A9A /* Resources */,
+				7818BA162D8620A1009C7A9A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				789C3B5B2D84AF1D00381706 /* PBXTargetDependency */,
+				7818B9F02D86209E009C7A9A /* PBXTargetDependency */,
 			);
 			name = "Apple Watch ArUco";
 			packageProductDependencies = (
 			);
 			productName = "Apple Watch ArUco";
-			productReference = 789C3B522D84AF1D00381706 /* Apple Watch ArUco.app */;
+			productReference = 7818B9E72D86209E009C7A9A /* Apple Watch ArUco.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		789C3B572D84AF1D00381706 /* Apple Watch ArUco Watch App */ = {
+		7818B9EC2D86209E009C7A9A /* Apple Watch ArUco Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 789C3B7E2D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch App" */;
+			buildConfigurationList = 7818BA132D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch App" */;
 			buildPhases = (
-				789C3B542D84AF1D00381706 /* Sources */,
-				789C3B552D84AF1D00381706 /* Frameworks */,
-				789C3B562D84AF1D00381706 /* Resources */,
+				7818B9E92D86209E009C7A9A /* Sources */,
+				7818B9EA2D86209E009C7A9A /* Frameworks */,
+				7818B9EB2D86209E009C7A9A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				789C3B5C2D84AF1D00381706 /* Apple Watch ArUco Watch App */,
+				7818B9F12D86209E009C7A9A /* Apple Watch ArUco Watch App */,
 			);
 			name = "Apple Watch ArUco Watch App";
 			packageProductDependencies = (
 			);
 			productName = "Apple Watch ArUco Watch App";
-			productReference = 789C3B582D84AF1D00381706 /* Apple Watch ArUco Watch App.app */;
+			productReference = 7818B9ED2D86209E009C7A9A /* Apple Watch ArUco Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		789C3B692D84AF2100381706 /* Apple Watch ArUco Watch AppTests */ = {
+		7818B9FE2D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 789C3B852D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppTests" */;
+			buildConfigurationList = 7818BA1A2D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppTests" */;
 			buildPhases = (
-				789C3B662D84AF2100381706 /* Sources */,
-				789C3B672D84AF2100381706 /* Frameworks */,
-				789C3B682D84AF2100381706 /* Resources */,
+				7818B9FB2D8620A1009C7A9A /* Sources */,
+				7818B9FC2D8620A1009C7A9A /* Frameworks */,
+				7818B9FD2D8620A1009C7A9A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				789C3B6C2D84AF2100381706 /* PBXTargetDependency */,
+				7818BA012D8620A1009C7A9A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				789C3B6D2D84AF2100381706 /* Apple Watch ArUco Watch AppTests */,
+				7818BA022D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests */,
 			);
 			name = "Apple Watch ArUco Watch AppTests";
 			packageProductDependencies = (
 			);
 			productName = "Apple Watch ArUco Watch AppTests";
-			productReference = 789C3B6A2D84AF2100381706 /* Apple Watch ArUco Watch AppTests.xctest */;
+			productReference = 7818B9FF2D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		789C3B732D84AF2100381706 /* Apple Watch ArUco Watch AppUITests */ = {
+		7818BA082D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 789C3B882D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppUITests" */;
+			buildConfigurationList = 7818BA1D2D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppUITests" */;
 			buildPhases = (
-				789C3B702D84AF2100381706 /* Sources */,
-				789C3B712D84AF2100381706 /* Frameworks */,
-				789C3B722D84AF2100381706 /* Resources */,
+				7818BA052D8620A1009C7A9A /* Sources */,
+				7818BA062D8620A1009C7A9A /* Frameworks */,
+				7818BA072D8620A1009C7A9A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				789C3B762D84AF2100381706 /* PBXTargetDependency */,
+				7818BA0B2D8620A1009C7A9A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				789C3B772D84AF2100381706 /* Apple Watch ArUco Watch AppUITests */,
+				7818BA0C2D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests */,
 			);
 			name = "Apple Watch ArUco Watch AppUITests";
 			packageProductDependencies = (
 			);
 			productName = "Apple Watch ArUco Watch AppUITests";
-			productReference = 789C3B742D84AF2100381706 /* Apple Watch ArUco Watch AppUITests.xctest */;
+			productReference = 7818BA092D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		789C3B4C2D84AF1D00381706 /* Project object */ = {
+		7818B9E12D86209E009C7A9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					789C3B512D84AF1D00381706 = {
+					7818B9E62D86209E009C7A9A = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					789C3B572D84AF1D00381706 = {
+					7818B9EC2D86209E009C7A9A = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					789C3B692D84AF2100381706 = {
+					7818B9FE2D8620A1009C7A9A = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 789C3B572D84AF1D00381706;
+						TestTargetID = 7818B9EC2D86209E009C7A9A;
 					};
-					789C3B732D84AF2100381706 = {
+					7818BA082D8620A1009C7A9A = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 789C3B572D84AF1D00381706;
+						TestTargetID = 7818B9EC2D86209E009C7A9A;
 					};
 				};
 			};
-			buildConfigurationList = 789C3B4F2D84AF1D00381706 /* Build configuration list for PBXProject "Apple Watch ArUco" */;
+			buildConfigurationList = 7818B9E42D86209E009C7A9A /* Build configuration list for PBXProject "Apple Watch ArUco" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 789C3B4B2D84AF1D00381706;
+			mainGroup = 7818B9E02D86209E009C7A9A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 789C3B532D84AF1D00381706 /* Products */;
+			productRefGroup = 7818B9E82D86209E009C7A9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				789C3B512D84AF1D00381706 /* Apple Watch ArUco */,
-				789C3B572D84AF1D00381706 /* Apple Watch ArUco Watch App */,
-				789C3B692D84AF2100381706 /* Apple Watch ArUco Watch AppTests */,
-				789C3B732D84AF2100381706 /* Apple Watch ArUco Watch AppUITests */,
+				7818B9E62D86209E009C7A9A /* Apple Watch ArUco */,
+				7818B9EC2D86209E009C7A9A /* Apple Watch ArUco Watch App */,
+				7818B9FE2D8620A1009C7A9A /* Apple Watch ArUco Watch AppTests */,
+				7818BA082D8620A1009C7A9A /* Apple Watch ArUco Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		789C3B502D84AF1D00381706 /* Resources */ = {
+		7818B9E52D86209E009C7A9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789C3B562D84AF1D00381706 /* Resources */ = {
+		7818B9EB2D86209E009C7A9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789C3B682D84AF2100381706 /* Resources */ = {
+		7818B9FD2D8620A1009C7A9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789C3B722D84AF2100381706 /* Resources */ = {
+		7818BA072D8620A1009C7A9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,21 +289,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		789C3B542D84AF1D00381706 /* Sources */ = {
+		7818B9E92D86209E009C7A9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789C3B662D84AF2100381706 /* Sources */ = {
+		7818B9FB2D8620A1009C7A9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		789C3B702D84AF2100381706 /* Sources */ = {
+		7818BA052D8620A1009C7A9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,25 +313,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		789C3B5B2D84AF1D00381706 /* PBXTargetDependency */ = {
+		7818B9F02D86209E009C7A9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 789C3B572D84AF1D00381706 /* Apple Watch ArUco Watch App */;
-			targetProxy = 789C3B5A2D84AF1D00381706 /* PBXContainerItemProxy */;
+			target = 7818B9EC2D86209E009C7A9A /* Apple Watch ArUco Watch App */;
+			targetProxy = 7818B9EF2D86209E009C7A9A /* PBXContainerItemProxy */;
 		};
-		789C3B6C2D84AF2100381706 /* PBXTargetDependency */ = {
+		7818BA012D8620A1009C7A9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 789C3B572D84AF1D00381706 /* Apple Watch ArUco Watch App */;
-			targetProxy = 789C3B6B2D84AF2100381706 /* PBXContainerItemProxy */;
+			target = 7818B9EC2D86209E009C7A9A /* Apple Watch ArUco Watch App */;
+			targetProxy = 7818BA002D8620A1009C7A9A /* PBXContainerItemProxy */;
 		};
-		789C3B762D84AF2100381706 /* PBXTargetDependency */ = {
+		7818BA0B2D8620A1009C7A9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 789C3B572D84AF1D00381706 /* Apple Watch ArUco Watch App */;
-			targetProxy = 789C3B752D84AF2100381706 /* PBXContainerItemProxy */;
+			target = 7818B9EC2D86209E009C7A9A /* Apple Watch ArUco Watch App */;
+			targetProxy = 7818BA0A2D8620A1009C7A9A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		789C3B7C2D84AF2100381706 /* Debug */ = {
+		7818BA112D8620A1009C7A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +392,7 @@
 			};
 			name = Debug;
 		};
-		789C3B7D2D84AF2100381706 /* Release */ = {
+		7818BA122D8620A1009C7A9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -445,7 +445,7 @@
 			};
 			name = Release;
 		};
-		789C3B7F2D84AF2100381706 /* Debug */ = {
+		7818BA142D8620A1009C7A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -455,13 +455,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Apple Watch ArUco Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YWW337ZMW;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Apple\\ Watch\\ ArUco\\ Watch\\ App",
-					"$(PROJECT_DIR)/Apple\\ Watch\\ ArUco\\ Watch\\ App",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Apple Watch ArUco v1";
+				INFOPLIST_KEY_CFBundleDisplayName = "Apple Watch ArUco";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,14 +469,13 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Debug;
 		};
-		789C3B802D84AF2100381706 /* Release */ = {
+		7818BA152D8620A1009C7A9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -491,13 +485,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Apple Watch ArUco Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 3YWW337ZMW;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Apple\\ Watch\\ ArUco\\ Watch\\ App",
-					"$(PROJECT_DIR)/Apple\\ Watch\\ ArUco\\ Watch\\ App",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Apple Watch ArUco v1";
+				INFOPLIST_KEY_CFBundleDisplayName = "Apple Watch ArUco";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,7 +499,6 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
@@ -518,7 +506,7 @@
 			};
 			name = Release;
 		};
-		789C3B832D84AF2100381706 /* Debug */ = {
+		7818BA182D8620A1009C7A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -533,7 +521,7 @@
 			};
 			name = Debug;
 		};
-		789C3B842D84AF2100381706 /* Release */ = {
+		7818BA192D8620A1009C7A9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -549,7 +537,7 @@
 			};
 			name = Release;
 		};
-		789C3B862D84AF2100381706 /* Debug */ = {
+		7818BA1B2D8620A1009C7A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,7 +557,7 @@
 			};
 			name = Debug;
 		};
-		789C3B872D84AF2100381706 /* Release */ = {
+		7818BA1C2D8620A1009C7A9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -590,7 +578,7 @@
 			};
 			name = Release;
 		};
-		789C3B892D84AF2100381706 /* Debug */ = {
+		7818BA1E2D8620A1009C7A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -609,7 +597,7 @@
 			};
 			name = Debug;
 		};
-		789C3B8A2D84AF2100381706 /* Release */ = {
+		7818BA1F2D8620A1009C7A9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -632,52 +620,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		789C3B4F2D84AF1D00381706 /* Build configuration list for PBXProject "Apple Watch ArUco" */ = {
+		7818B9E42D86209E009C7A9A /* Build configuration list for PBXProject "Apple Watch ArUco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				789C3B7C2D84AF2100381706 /* Debug */,
-				789C3B7D2D84AF2100381706 /* Release */,
+				7818BA112D8620A1009C7A9A /* Debug */,
+				7818BA122D8620A1009C7A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		789C3B7E2D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch App" */ = {
+		7818BA132D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				789C3B7F2D84AF2100381706 /* Debug */,
-				789C3B802D84AF2100381706 /* Release */,
+				7818BA142D8620A1009C7A9A /* Debug */,
+				7818BA152D8620A1009C7A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		789C3B822D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco" */ = {
+		7818BA172D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				789C3B832D84AF2100381706 /* Debug */,
-				789C3B842D84AF2100381706 /* Release */,
+				7818BA182D8620A1009C7A9A /* Debug */,
+				7818BA192D8620A1009C7A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		789C3B852D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppTests" */ = {
+		7818BA1A2D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				789C3B862D84AF2100381706 /* Debug */,
-				789C3B872D84AF2100381706 /* Release */,
+				7818BA1B2D8620A1009C7A9A /* Debug */,
+				7818BA1C2D8620A1009C7A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		789C3B882D84AF2100381706 /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppUITests" */ = {
+		7818BA1D2D8620A1009C7A9A /* Build configuration list for PBXNativeTarget "Apple Watch ArUco Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				789C3B892D84AF2100381706 /* Debug */,
-				789C3B8A2D84AF2100381706 /* Release */,
+				7818BA1E2D8620A1009C7A9A /* Debug */,
+				7818BA1F2D8620A1009C7A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 789C3B4C2D84AF1D00381706 /* Project object */;
+	rootObject = 7818B9E12D86209E009C7A9A /* Project object */;
 }
