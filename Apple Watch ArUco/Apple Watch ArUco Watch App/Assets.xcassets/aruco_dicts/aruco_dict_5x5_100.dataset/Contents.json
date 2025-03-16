@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "aruco_dict_5x5_100.json",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
