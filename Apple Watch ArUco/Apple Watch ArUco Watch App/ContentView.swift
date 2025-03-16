@@ -14,7 +14,6 @@ struct ContentView: View {
   @State private var currentScreen: ScreenType = .selection_dict
   
   // data
-  // @State var selectedDict = "0" // may have to late-initialize? this seems awkward.
   @State var selectedDict = "" // DEBUG // may have to late-initialize? this seems awkward.
   @State var selectedId = 0
   var arucoDictData: ArUcoDictionary! {
@@ -43,8 +42,8 @@ struct ContentView: View {
         LoadingView(onNext: { currentScreen = .marker })
         // DEBUG
         Text("") // newline
-        Text("ArUco Dict: \(selectedDict)").font(.caption2)
-        Text("ArUco ID: \(selectedId)").font(.caption2)
+        Text("Dict: \(selectedDict)").font(.caption2)
+        Text("ID: \(selectedId)").font(.caption2)
       }
     case .marker:
       ArucoMarkerView(markerSize: arucoDictData.markersize, markerId: selectedId, markerData: arucoDictData.getBinaryMarker(at: selectedId)!)

@@ -15,61 +15,64 @@ struct ArucoMarkerView: View {
     let cornerRadius: CGFloat = 25 // Adjust this value to change the roundness of the corners
 
     var body: some View {
+      VStack {
+//        Text("ID: \(markerId)").font(.caption2)
         GeometryReader { geometry in
-            let cellSize = geometry.size.width / CGFloat(markerSize + 2*marginSize)
-            Canvas { context, size in
-                // Draw all cells
-                for row in -marginSize..<markerSize+marginSize {
-                    for col in -marginSize..<markerSize+marginSize {
-                        let rect = CGRect(
-                            x: CGFloat(col + marginSize) * cellSize,
-                            y: CGFloat(row + marginSize) * cellSize,
-                            width: cellSize,
-                            height: cellSize
-                        )
-                        
-                        // Determine if this is a corner cell in the white margin
-                        let isCorner = (row == -2 && col == -2) || // Top-left
-                                      (row == -2 && col == markerSize+1) || // Top-right
-                                      (row == markerSize+1 && col == -2) || // Bottom-left
-                                      (row == markerSize+1 && col == markerSize+1) // Bottom-right
-                        
-                        if row == -2 || row == markerSize+1 || col == -2 || col == markerSize+1 {
-                            if isCorner {
-                                // Create a rounded path for corner cells
-                                let cornerPath = createRoundedCornerPath(rect: rect, corner: (row, col), cellSize: cellSize, markerSize: markerSize)
-                                context.fill(cornerPath, with: .color(.white))
-                            } else {
-                                // Regular white margin cells
-                                context.fill(Path(rect), with: .color(.white))
-                            }
-                        }
-                        else if row == -1 || row == markerSize || col == -1 || col == markerSize {
-                            // Black border cells
-                            context.fill(Path(rect), with: .color(.black))
-                        }
-                    }
-                }
+          let cellSize = geometry.size.width / CGFloat(markerSize + 2*marginSize)
+          Canvas { context, size in
+            // Draw all cells
+            for row in -marginSize..<markerSize+marginSize {
+              for col in -marginSize..<markerSize+marginSize {
+                let rect = CGRect(
+                  x: CGFloat(col + marginSize) * cellSize,
+                  y: CGFloat(row + marginSize) * cellSize,
+                  width: cellSize,
+                  height: cellSize
+                )
                 
-                // Draw marker data cells
-                for row in 0..<markerSize {
-                    for col in 0..<markerSize {
-                        let rect = CGRect(
-                            x: CGFloat(col + marginSize) * cellSize,
-                            y: CGFloat(row + marginSize) * cellSize,
-                            width: cellSize,
-                            height: cellSize
-                        )
-                        if markerData[row][col] == 1 {
-                            context.fill(Path(rect), with: .color(.white))
-                        }
-                        else if markerData[row][col] == 0 {
-                            context.fill(Path(rect), with: .color(.black))
-                        }
-                    }
+                // Determine if this is a corner cell in the white margin
+                let isCorner = (row == -2 && col == -2) || // Top-left
+                (row == -2 && col == markerSize+1) || // Top-right
+                (row == markerSize+1 && col == -2) || // Bottom-left
+                (row == markerSize+1 && col == markerSize+1) // Bottom-right
+                
+                if row == -2 || row == markerSize+1 || col == -2 || col == markerSize+1 {
+                  if isCorner {
+                    // Create a rounded path for corner cells
+                    let cornerPath = createRoundedCornerPath(rect: rect, corner: (row, col), cellSize: cellSize, markerSize: markerSize)
+                    context.fill(cornerPath, with: .color(.white))
+                  } else {
+                    // Regular white margin cells
+                    context.fill(Path(rect), with: .color(.white))
+                  }
                 }
+                else if row == -1 || row == markerSize || col == -1 || col == markerSize {
+                  // Black border cells
+                  context.fill(Path(rect), with: .color(.black))
+                }
+              }
             }
+            
+            // Draw marker data cells
+            for row in 0..<markerSize {
+              for col in 0..<markerSize {
+                let rect = CGRect(
+                  x: CGFloat(col + marginSize) * cellSize,
+                  y: CGFloat(row + marginSize) * cellSize,
+                  width: cellSize,
+                  height: cellSize
+                )
+                if markerData[row][col] == 1 {
+                  context.fill(Path(rect), with: .color(.white))
+                }
+                else if markerData[row][col] == 0 {
+                  context.fill(Path(rect), with: .color(.black))
+                }
+              }
+            }
+          }
         }
+      }
         .aspectRatio(1, contentMode: .fit)
     }
     
