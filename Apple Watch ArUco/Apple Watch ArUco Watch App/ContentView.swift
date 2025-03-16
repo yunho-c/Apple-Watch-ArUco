@@ -17,6 +17,9 @@ struct ContentView: View {
   // @State var selectedDict = "0" // may have to late-initialize? this seems awkward.
   @State var selectedDict = "" // DEBUG // may have to late-initialize? this seems awkward.
   @State var selectedId = 0
+  var arucoDictData: ArUcoDictionary! {
+    return try? ArucoDictFetchService().loadArucoDictionary(fileName: "aruco_dict_\(selectedDict)_100")
+  }
   
   enum ScreenType {
 //    case splash
@@ -27,13 +30,6 @@ struct ContentView: View {
     case marker
   }
   
-  let sampleMarker = [
-    [1, 1, 1, 1],
-    [1, 0, 1, 0],
-    [0, 1, 0, 1],
-    [1, 1, 1, 1]
-  ]
-
   var body: some View {
     switch currentScreen {
     case .main:
@@ -51,10 +47,7 @@ struct ContentView: View {
         Text("ArUco ID: \(selectedId)").font(.caption2)
       }
     case .marker:
-      let firstCharIndex = selectedDict.index(selectedDict.startIndex, offsetBy: 1)
-      let firstChar = selectedDict.substring(to: firstCharIndex)
-      let markerSize = Int(firstChar)!
-      ArucoMarkerView(markerSize: markerSize, markerId: selectedId, markerData: sampleMarker)
+      ArucoMarkerView(markerSize: arucoDictData.markersize, markerId: selectedId, markerData: arucoDictData.getBinaryMarker(at: selectedId)!)
         .frame(width: 200, height: 200)
     }
   }

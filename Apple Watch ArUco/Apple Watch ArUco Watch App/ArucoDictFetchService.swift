@@ -89,6 +89,29 @@ struct ArUcoDictionary: Codable {
     }
 }
 
+// Extension to convert binary string to actual marker data
+extension ArUcoDictionary {
+    func getBinaryMarker(at index: Int) -> [[Int]]? {
+        guard index >= 0 && index < markers.count else { return nil }
+        
+        let markerString = markers[index]
+        let size = Int(sqrt(Double(markerString.count)))
+        
+        // Check if the marker string has a valid square size
+        guard size * size == markerString.count else { return nil }
+        
+        var markerData = Array(repeating: Array(repeating: 0, count: size), count: size)
+        
+        for (i, char) in markerString.enumerated() {
+            let row = i / size
+            let col = i % size
+            markerData[row][col] = char == "1" ? 1 : 0
+        }
+        
+        return markerData
+    }
+}
+
 class ArucoDictFetchService {
   func loadJSON(fileName: String) throws -> Any {
       guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "json") else {
@@ -108,3 +131,4 @@ class ArucoDictFetchService {
       return dictionary
     }
 }
+
