@@ -9,10 +9,20 @@ import SwiftUI
 
 // Example usage with a predefined 4x4 marker
 struct ContentView: View {
-  @State private var currentScreen: ScreenType = .selection
+  // state management
+//  @State private var currentScreen: ScreenType = .main // TODO implement a fancy attractive main screen
+  @State private var currentScreen: ScreenType = .selection_dict
+  
+  // data
+  // @State var selectedDict = "0" // may have to late-initialize? this seems awkward.
+  @State var selectedDict = "" // DEBUG // may have to late-initialize? this seems awkward.
+  @State var selectedId = 0
   
   enum ScreenType {
-    case selection
+//    case splash
+    case main
+    case selection_dict
+    case selection_id
     case loading
     case marker
   }
@@ -26,12 +36,25 @@ struct ContentView: View {
 
   var body: some View {
     switch currentScreen {
-    case .selection:
-      SelectionView()
+    case .main:
+      Text("Not Implemented")
+    case .selection_dict:
+      ArucoDictionarySelectionView(selectedDict: $selectedDict, onNext: { currentScreen = .selection_id })
+    case .selection_id:
+      ArucoIdSelectionView(selectedId: $selectedId, onNext: { currentScreen = .loading }, onBack: { currentScreen = .selection_dict })
     case .loading:
-      LoadingView()
+      VStack {
+        LoadingView(onNext: { currentScreen = .marker })
+        // DEBUG
+        Text("") // newline
+        Text("ArUco Dict: \(selectedDict)").font(.caption2)
+        Text("ArUco ID: \(selectedId)").font(.caption2)
+      }
     case .marker:
-      ArucoMarkerView(markerSize: 4, markerId: 0, markerData: sampleMarker)
+      let firstCharIndex = selectedDict.index(selectedDict.startIndex, offsetBy: 1)
+      let firstChar = selectedDict.substring(to: firstCharIndex)
+      let markerSize = Int(firstChar)!
+      ArucoMarkerView(markerSize: markerSize, markerId: selectedId, markerData: sampleMarker)
         .frame(width: 200, height: 200)
     }
   }

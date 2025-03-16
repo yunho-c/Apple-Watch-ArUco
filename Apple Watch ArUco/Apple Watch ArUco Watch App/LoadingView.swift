@@ -8,12 +8,22 @@
 import SwiftUI
 
 struct LoadingView: View {
+  var onNext: () -> Void
+  var loadTime: Int = 1
+  
   var body: some View {
-    Text("Loading...").font(.title)
-    Text("Press side button to adjust settings.")
+    VStack {
+      Text("Loading...").font(.title)
+      Text("Press side button to adjust settings.")
+    }
+    .onAppear {
+      // Schedule the next screen transition after loadTime seconds
+      DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(loadTime)) {
+        onNext()
+      }
+    }
   }
 }
-
-#Preview {
-  LoadingView()
-}
+//#Preview {
+//  LoadingView()
+//}

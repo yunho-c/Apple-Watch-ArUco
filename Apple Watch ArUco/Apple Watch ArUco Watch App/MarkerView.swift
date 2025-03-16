@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ArucoMarkerView: View {
     let markerSize: Int
+    let markerId: Int
     let markerData: [[Int]] // The binary pattern of the marker
     let marginSize: Int = 2
 
@@ -66,7 +67,7 @@ struct ArucoMarkerTestView: View {
     ]
 
     var body: some View {
-        ArucoMarkerView(markerSize: 4, markerData: sampleMarker)
+      ArucoMarkerView(markerSize: 4, markerId: 0, markerData: sampleMarker)
             .frame(width: 200, height: 200)
     }
 }

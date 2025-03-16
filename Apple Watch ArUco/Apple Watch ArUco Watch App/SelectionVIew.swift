@@ -23,9 +23,12 @@ struct ArucoDictionarySelectionView: View {
   var body: some View {
     VStack {
       Picker("ArUco Dictionary", selection: $selectedDict) {
-          ForEach(0..<arucoDicts.count) { id in
-            Text(self.arucoDicts[id])
+        ForEach(arucoDicts, id: \.self) { dict in
+            Text(dict).tag(dict) // NOTE: not sure if `.tag()` is necessary here
           }
+      }
+      .onAppear {
+        selectedDict = arucoDicts[0]
       }
       .padding()
       Button("Next")
@@ -39,19 +42,20 @@ struct ArucoDictionarySelectionView: View {
 }
 
 struct ArucoIdSelectionView: View {
-  @Binding var idValue: Int
+  @Binding var selectedId: Int
   let maxIdValue: Int = 100
   var onNext: () -> Void
   var onBack: () -> Void
   
   var body: some View {
     VStack {
-      Picker("ArUco ID", selection: $idValue) {
+      Picker("ArUco ID", selection: $selectedId) {
           ForEach(0..<maxIdValue) { id in
             Text("\(id)").tag(id)
           }
       }
       .padding()
+      // NOTE: let's consider putting the back/next buttons side-by-side.
 //      Button("Back")
 //           {
 //             onBack()
@@ -68,34 +72,34 @@ struct ArucoIdSelectionView: View {
   }
 }
 
-struct SelectionView: View {
-  @State private var currentScreen = 0
-  @State var selectedDict = "" // may have to late-initialize?
-  @State var idValue = 0
-  
-//  @State private var preferences = UserPreferences()
+//struct SelectionView: View {
+//  @State private var currentScreen = 0
+//  @State var selectedDict = "" // may have to late-initialize?
+//  @State var idValue = 0
+//  
+////  @State private var preferences = UserPreferences()
+//
+//  var body: some View {
+//    if currentScreen == 0 {
+//      ArucoDictionarySelectionView(
+//        selectedDict: $selectedDict,
+//        onNext: { currentScreen = 1 }
+//      )
+//    } else {
+//      ArucoIdSelectionView(
+//        idValue: $idValue,
+//        onNext: { currentScreen = 2 },
+//        onBack: { currentScreen = 0 }
+////        onComplete: saveAndFinishOnboarding
+//      )
+//    }
+//  }
+//  
+//  func saveAndFinishOnboarding() {
+//      // Save preferences and exit onboarding
+//  }
+//}
 
-  var body: some View {
-    if currentScreen == 0 {
-      ArucoDictionarySelectionView(
-        selectedDict: $selectedDict,
-        onNext: { currentScreen = 1 }
-      )
-    } else {
-      ArucoIdSelectionView(
-        idValue: $idValue,
-        onNext: { currentScreen = 2 },
-        onBack: { currentScreen = 0 }
-//        onComplete: saveAndFinishOnboarding
-      )
-    }
-  }
-  
-  func saveAndFinishOnboarding() {
-      // Save preferences and exit onboarding
-  }
-}
-
-#Preview {
-  SelectionView()
-}
+//#Preview {
+//  SelectionView()
+//}
