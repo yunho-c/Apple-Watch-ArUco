@@ -11,7 +11,7 @@ import SwiftUI
 struct Apple_Watch_ArUco_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DebugView()
         }
     }
 }
