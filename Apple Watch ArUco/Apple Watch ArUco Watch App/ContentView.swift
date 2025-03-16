@@ -12,7 +12,8 @@ struct ContentView: View {
   // state management
 //  @State private var currentScreen: ScreenType = .main // TODO implement a fancy attractive main screen
   @State private var currentScreen: ScreenType = .selection_dict
-  
+  @State private var dragOffset: CGFloat = 0 // offset state for drag visualization
+
   // data
   @State var selectedDict = "" // DEBUG // may have to late-initialize? this seems awkward.
   @State var selectedId = 0
@@ -29,26 +30,62 @@ struct ContentView: View {
     case marker
   }
   
-  var body: some View {
-    switch currentScreen {
-    case .main:
-      Text("Not Implemented")
-    case .selection_dict:
-      ArucoDictionarySelectionView(selectedDict: $selectedDict, onNext: { currentScreen = .selection_id })
-    case .selection_id:
-      ArucoIdSelectionView(selectedId: $selectedId, onNext: { currentScreen = .loading }, onBack: { currentScreen = .selection_dict })
-    case .loading:
-      VStack {
-        LoadingView(onNext: { currentScreen = .marker })
-        // DEBUG
-        Text("") // newline
-        Text("Dict: \(selectedDict)").font(.caption2)
-        Text("ID: \(selectedId)").font(.caption2)
-      }
-    case .marker:
-      ArucoMarkerView(markerSize: arucoDictData.markersize, markerId: selectedId, markerData: arucoDictData.getBinaryMarker(at: selectedId)!)
-        .frame(width: 200, height: 200)
+  // Simple function to return the previous screen based on current screen
+  private func previousScreen(for current: ScreenType) -> ScreenType? {
+    switch current {
+    case .selection_id: return .selection_dict
+    case .loading: return .selection_id
+    case .marker: return .selection_id
+    default: return nil // No previous screen for main and selection_dict
     }
+  }
+  
+  var body: some View {
+    let content = Group {
+      switch currentScreen {
+      case .main:
+        Text("Not Implemented")
+      case .selection_dict:
+        ArucoDictionarySelectionView(selectedDict: $selectedDict, onNext: { currentScreen = .selection_id })
+      case .selection_id:
+        ArucoIdSelectionView(selectedId: $selectedId, onNext: { currentScreen = .loading }, onBack: { currentScreen = .selection_dict })
+      case .loading:
+        VStack {
+          LoadingView(onNext: { currentScreen = .marker })
+          // DEBUG
+          Text("") // newline
+          Text("Dict: \(selectedDict)").font(.caption2)
+          Text("ID: \(selectedId)").font(.caption2)
+        }
+      case .marker:
+        ArucoMarkerView(markerSize: arucoDictData.markersize, markerId: selectedId, markerData: arucoDictData.getBinaryMarker(at: selectedId)!)
+          .frame(width: 200, height: 200)
+      }
+    }
+    
+    return content
+      .offset(x: dragOffset)
+      .gesture(
+        DragGesture(minimumDistance: 20)
+          .onChanged { value in
+            // Only allow right swipe if there's a previous screen
+            if value.translation.width > 0 && previousScreen(for: currentScreen) != nil {
+              // Apply some resistance to the drag
+              dragOffset = value.translation.width * 0.6
+            }
+          }
+          .onEnded { value in
+            dragOffset = 0
+            // Check if swipe is primarily horizontal and right-to-left
+            if value.translation.width > 50 && abs(value.translation.height) < 50 {
+              if let previous = previousScreen(for: currentScreen) {
+                withAnimation {
+                  currentScreen = previous
+                }
+              }
+            }
+          }
+      )
   }
 }
 

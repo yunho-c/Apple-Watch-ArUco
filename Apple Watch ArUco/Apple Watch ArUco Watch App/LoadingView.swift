@@ -14,7 +14,7 @@ struct LoadingView: View {
   var body: some View {
     VStack {
       Text("Loading...").font(.title)
-      Text("Press side button to adjust settings.")
+      Text("Swipe left to adjust settings.")
     }
     .onAppear {
       // Schedule the next screen transition after loadTime seconds
