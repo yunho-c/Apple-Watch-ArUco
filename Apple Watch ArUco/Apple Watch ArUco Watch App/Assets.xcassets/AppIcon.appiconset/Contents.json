@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "Logo_4x4_ID0_1024px.png",
       "idiom" : "universal",
       "platform" : "watchos",
       "size" : "1024x1024"
