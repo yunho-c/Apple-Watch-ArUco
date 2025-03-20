@@ -13,8 +13,10 @@ struct LoadingView: View {
   
   var body: some View {
     VStack {
-      Text("Loading...").font(.title)
+//      Text("Loading...").font(.title)
+      Text("Loading").font(.title)
       Text("Swipe left to adjust settings.")
+      Text("(Swipe quickly!)")
     }
     .onAppear {
       // Schedule the next screen transition after loadTime seconds

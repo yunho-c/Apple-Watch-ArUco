@@ -22,7 +22,7 @@ struct ArucoDictionarySelectionView: View {
   
   var body: some View {
     VStack {
-      Picker("ArUco Dictionary", selection: $selectedDict) {
+      Picker("Marker Size", selection: $selectedDict) {
         ForEach(arucoDicts, id: \.self) { dict in
             Text(dict).tag(dict) // NOTE: not sure if `.tag()` is necessary here
           }
