@@ -21,6 +21,8 @@ struct ContentView: View {
     return try? ArucoDictFetchService().loadArucoDictionary(fileName: "aruco_dict_\(selectedDict)_100")
   }
   
+  var dragSize = 20.0;
+  
   enum ScreenType {
 //    case splash
     case main
@@ -66,7 +68,7 @@ struct ContentView: View {
     return content
       .offset(x: dragOffset)
       .gesture(
-        DragGesture(minimumDistance: 20)
+        DragGesture(minimumDistance: 15)
           .onChanged { value in
             // Only allow right swipe if there's a previous screen
             if value.translation.width > 0 && previousScreen(for: currentScreen) != nil {
@@ -77,7 +79,7 @@ struct ContentView: View {
           .onEnded { value in
             dragOffset = 0
             // Check if swipe is primarily horizontal and right-to-left
-            if value.translation.width > 50 && abs(value.translation.height) < 50 {
+            if value.translation.width > dragSize && abs(value.translation.height) < dragSize {
               if let previous = previousScreen(for: currentScreen) {
                 withAnimation {
                   currentScreen = previous
